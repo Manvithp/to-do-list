@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: linear-gradient(-45deg, #f77eb6,#5bd5ee, #f77eb6, #5bd5ee, #f77eb6,#5bd5ee,#f77eb6);
+    background-size: 400% 400%;
+    animation: animate 5s ease infinite;
+    height: 100vh;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.input-group{
+    max-width: 39%;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    /* padding: 30px; */
+}
+
+#td-ip{
+    /* border: 1px solid #FFDD7E;
+    background-color: #ffab732b; */
+    border: 1px solid #213555;
+    background-color: #2135552b;
+}
+
+
+
+#error-txt{
+    font-size: 1.1em;
+    border-bottom: 1.5px solid #B8001F;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    max-width: 900px;
+}
+
+#task-list{
+    margin-top: 20px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    /* background-color: #1B4242; */
+    border: 1.6px solid #F5E9FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: black;
+    
+}
+
+
+.btn-div{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-div button{
+    padding: 5px 10px;
+}
+
+#list-para-id{
+    font-size: 1.1em;
+    font-weight: 900;
+    font-family: fantasy;
+    text-align: center;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.completed{
+    text-decoration: line-through;
+    /* color: #5fab6fd1; */
+    font-weight: 100;
+}
+
+
+
